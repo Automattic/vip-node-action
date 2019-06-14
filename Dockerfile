@@ -1,4 +1,5 @@
 FROM node:8
-RUN pwd
+COPY . /
+RUN ls -la /
 RUN npm install
 RUN npx @automattic/vip-go-preflight-checks
